@@ -1,0 +1,86 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-weight:inherit;
+    font-style:inherit;
+    font-size:100%;
+    font-family:inherit;
+    vertical-align:baseline;
+}
+/* remember to define focus styles! */
+:focus{
+    outline:0;
+}
+body{
+    line-height:1;
+    color:black;
+    background:white;
+}
+ol, ul{
+    list-style:none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table{
+    border-collapse:separate;
+    border-spacing:0;
+}
+caption, th, td{
+    text-align:left;
+    font-weight:normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after{
+    content:"";
+}
+blockquote, q{
+    quotes:"" "";
+}
+
+*{outline:none}
+html,body{margin:0;padding:0}
+table, img{border:0}
+a{color:#1E598E;text-decoration:none}
+a:hover{color:#1E598E;text-decoration:underline}
+a.light{color:#1E7694}
+html,body,input{font-family:"lucida grande",Tahoma,Verdana,Arial,Sans-serif;font-size:11px}
+strong{font-weight:bold}
+.bi{color:#3d79c4}.gi{color:#69a536}
+
+.clearing{height:0;font-size:0;clear:both}
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+.clearfix{display:inline-block}
+html[xmlns] .clearfix{display:block}
+* html .clearfix{height:1%}
+.left{float:left}
+.right{float:right}
+.center{margin-left:auto;margin-right:auto}
+h1,h2,h3,h4,h5{margin:0;padding:0;font-weight:bold}
+h4{font-size:12px;font-weight:bold}
+.inputtext,
+.inputpassword{border:1px solid #BDC7DA;font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-size:11px;padding:3px}
+.inputbutton,
+.inputsubmit{border-style:solid;border-width:1px;border-color:#d9dfea #0e1f5b #0e1f5b #d9dfea;background-color:#0033a8;color:#fff;padding:2px 5px 3px;text-align:center;*width:1;*overflow:visible;*padding:2px 15px;font-size:11px;font-family:"lucida grande",tahoma,verdana,arial,sans-serif}
+.inputaux{background:#f0f0f0;border-color:#e7e7e7 #666 #666 #e7e7e7;color:#000}
+
+/* content:404 */
+.error_page{border:1px solid #CCC;margin:50px 80px;padding:50px;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;line-height:20px}
+.error_page_head{font-size:16px;letter-spacing:-.25px;border-bottom:1px solid #CCC;padding:0 0 10px 20px;font-weight:bold;line-height:16px;margin-bottom:10px}
+.error_page ul{list-style:square;color:#3B5998;margin:10px 0;padding-left:20px}
+
+/* icons */
+.icon{position:relative}
+.icon i{background:url(../images/icons.png) no-repeat;position:absolute;display:block;top:0;left:0;width:16px;height:16px}
+i.warning{background-position:100% -1642px;height:14px}
+
+.btn{background:#537dac url(../images/bg.png) 0 -442px repeat-x;border:1px solid #fff;border-color:#37679a;color:#FFF;text-shadow:none;-moz-border-radius:3px;border-radius:3px;-webkit-border-radius:3px;float:left;font-weight:bold}
+
+.inner_width{width:920px;margin:0 auto}

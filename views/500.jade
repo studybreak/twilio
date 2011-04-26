@@ -1,0 +1,125 @@
+!!! 5
+html(lang="en")
+    head
+      meta(http-equiv="Content-Type",content="text/html; charset=utf-8")
+      meta(http-equiv="imagetoolbar",content="no")
+      meta(name="copyright",content="Copyright (c) 2011 Something.com")
+      meta(name="revisit-after",content="3 days")
+      meta(name="title",content="You are you!")
+      meta(name="description",content="w00t!")
+      script(type="text/javascript",src="/js/jquery-1.5.1.min.js")
+      link(rel="stylesheet",type="text/css",media="screen, projection",href="/css/styles.css")
+      link(type="text/css",rel="stylesheet",href="/css/tetris.css")
+      script(type="text/javascript",src="/js/tetris.js")
+      title Something.com
+    body.body_class
+
+        div.error_page
+            div.error_page_head.icon
+                i.warning
+                p Well, this is embarrassing.
+            
+            div Someone is having a bit of trouble. We're working on fixing it. While you're waiting, here's a fun game to play.
+            br
+            br
+            
+            div#tetris
+                div.left
+                    h1 Tetris
+                    div.menu
+                        div
+                            a(href="javascript:void(0)",id="tetris-menu-start",class="btn")
+                                span New Game
+                        div#tetris-pause
+                            a(href="javascript:void(0)",id="tetris-menu-pause",class="btn")
+                                span Pause
+                        div#tetris-resume(style="display:none")
+                            a(href="javascript:void(0)",id="tetris-menu-resume",class="btn")
+                                span Resume
+                        div
+                            a(href="javascript:void(0)",id="tetris-menu-highscores",class="btn")
+                                span Highscores
+                        div
+                            a(href="javascript:void(0)",id="tetris-menu-help",class="btn")
+                                span About
+                    div#tetris-nextpuzzle
+                    div#tetris-gameover Game Over
+                    div#tetris-keys
+                        div.h5 Keyboard:
+                        table(cellspacing="0", cellpadding="0")
+                        tr 
+                            td Rotate:
+                            td
+                            td
+                                img(src="/images/key-up.gif",width="14",height="14",alt="")
+                            td
+                        tr 
+                            td Move:
+                            td
+                                img(src="/images/key-left.gif",width="14",height="14",alt="")
+                            td
+                                img(src="/images/key-down.gif",width="14",height="14",alt="")
+                            td
+                                img(src="/images/key-right.gif",width="14",height="14",alt="")
+                        tr 
+                            td Fall:
+                            td(colspan="3")
+                                img( src="/images/key-space.gif",width="44",height="13",alt="")
+                    div.stats
+                        div.h5 Statistics:
+                        table(cellspacing="0",cellpadding="0")
+                        tr
+                            td.level Level:
+                            td
+                                span#tetris-stats-level 1
+                        tr
+                            td.score Score:
+                            td
+                                span#tetris-stats-score 0
+                        tr
+                            td.lines Lines:
+                            td
+                                span#tetris-stats-lines 0
+                        tr
+                            td.apm APM:
+                            td
+                                span#tetris-stats-apm 0
+                        tr
+                            td.time Time:
+                            td
+                                span#tetris-stats-time 0
+         
+                div.left-border
+                div#tetris-area
+                    div.grid1
+                    div.grid2
+                    div.grid3
+                    div.grid4
+                    div.grid5
+                    div.grid6
+                div#tetris-help.window
+                    div.top About 
+                        span#tetris-help-close.close x
+                    div.content(style="margin-top: 1em;")
+                        div(style="margin-top: 1em;")
+                        div 
+                            | JsTetris is a highly customizable tetris game written in javascript, 
+                            | full sources available, it is free to modify.
+                        br
+                        div Author: Cezary Tomczak
+                        div Site: 
+                            a(target="_blank",href="http://www.gosu.pl/tetris/") www.gosu.pl/tetris/
+                        br
+                        div License: BSD revised (free for any use)
+                div#tetris-highscores.window"
+                    div.top Highscores 
+                        span#tetris-highscores-close.close x
+                    div.content
+                        div#tetris-highscores-content
+                        br
+                        p Note: these scores are kept in cookies, they are only visible to your computer.
+            script
+                var tetris = new Tetris();
+                tetris.unit = 14;
+                tetris.areaX = 12;
+                tetris.areaY = 22;

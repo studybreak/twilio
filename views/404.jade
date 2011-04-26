@@ -1,0 +1,17 @@
+!!! 5
+html(lang="en")
+    head
+        title PageTitle
+        link(rel="stylesheet",type="text/css",media="screen, projection",href="/css/styles.css")
+    body
+        div.error_page
+            div.error_page_head.icon
+                i.warning 
+                p The page you requested was not found
+
+            p You may have clicked on an expired link or mistyped the address. Some web addresses are case sensitive.              
+            ul
+                li
+                    a(href="/") Return to the homepage
+                li
+                    a(href="javascript:history.go(-1)") Go back to the previous page
